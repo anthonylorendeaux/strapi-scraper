@@ -25,6 +25,14 @@
       }
     },
     {
+      "method": "GET",
+      "path": "/scrapers/:slug",
+      "handler": "scraper.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "POST",
       "path": "/scrapers",
       "handler": "scraper.create",
